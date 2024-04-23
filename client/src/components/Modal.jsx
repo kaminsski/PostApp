@@ -24,7 +24,7 @@ export default function Modal() {
   }
   return (
     <div className=' w-full h-screen bg-opacity-50 bg-black fixed top-0 left-0 right-0 bottom-0 z-50 flex items-center justify-center'>
-      <div className=' bg-white w-1/3 p-2 rounded-md'>
+      <div className=' bg-white w-full md:w-1/3 p-2 rounded-md'>
         <div onClick={()=>dispatch({type:"MODAL", payload:false})} className=' flex justify-center cursor-pointer items-center'>
         <h1 className=' font-bold text-2xl'>{ modal?.updateId ? "Update Post" : "Share Post" } </h1>
 

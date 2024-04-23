@@ -21,7 +21,7 @@ export default function Auth() {
 
   return (
     <div className=' w-full h-screen bg-gray-100 flex items-center justify-center'>
-      <div className="w-1/3 bg-white p-3">
+      <div className="w-full mx-4 md:mx-0 md:w-1/3 bg-white p-3">
         <h1 className='text-2xl text-gray-700 font-bold'>{signUp ? "Register" :"Login"} </h1>
         <div className='flex flex-col space-y-3 my-5'>
             {signUp && <input value={authData.username} name='username' onChange={onChangeHandle} type="text" placeholder='Username' className=' input'/>}
